@@ -1,0 +1,46 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+html,
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.designer-img {
+    width: 500px;
+    height: 500px;
+}
+
+.avatar-img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    min-width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: nowrap;
+    text-align: center;
+    white-space: none; */
+    position: fixed;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list>li {
+    margin: 10px 10px;
+}
+
+.splash-container {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    padding-top: 70px;
+}
