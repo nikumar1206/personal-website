@@ -1,9 +1,12 @@
 @import url("reset.css");
 @import url("fonts.css");
 @import url("contact_me.css");
+@import url("tech-skills.css");
+@import url("projects.css");
 
 :root {
-    --purple: #6b63ff
+    --purple: #6b63ff;
+    --dpurple: #584ccc;
 }
 
 html,
@@ -21,12 +24,13 @@ body {
 .avatar-img {
     width: 50px;
     height: 50px;
+    padding-bottom: 5px;
 }
 
 .navbar {
     display: flex;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
@@ -36,17 +40,51 @@ body {
     position: fixed;
     padding: 0 15vw;
     transition: top 0.3s;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar>p {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 li>a {
     text-decoration: none;
     color: black;
     transition: 0.4s all;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+
+}
+
+li>a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dpurple);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+li>a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 li>a:hover {
     transition: 0.4s all;
-    color: var(--purple);
+    /* color: var(--dpurple); */
 }
 
 .nav-list {
@@ -202,4 +240,28 @@ textarea {
 .fa-brands:hover {
     color: var(--purple);
     transition: 0.3s ease-in-out;
+}
+
+.fa-angle-down {
+    font-size: 2em;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-angle-down:hover {
+    color: var(--dpurple);
+    transition: all 0.4s ease-in-out;
+    transform: translateY(30%);
+}
+
+.fa-ad-wrapper {
+    position: absolute;
+    left: 49%;
+}
+
+a {
+    color: inherit;
+}
+
+.fa-ad-wrapper.main {
+    bottom: 5%;
 }
