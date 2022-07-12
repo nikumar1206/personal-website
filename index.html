@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <title>Nikhil Kumar's Porfolio Site</title>
 </head>
 <body>
     <nav class="navbar">
             <div class="avatar">
-            <img class="avatar-img"src="./assets/undraw_avatar.svg" alt="">
+            <img class="avatar-img"src="./assets/images/undraw_avatar.svg" alt="">
             Nikhil
         </div>
         <ul class="nav-list">
@@ -26,7 +28,21 @@
     </nav>
 
     <section id="home" class="splash-container">
-    <img class="designer-img" src="./assets/undraw_designer.svg" alt="">
+        <div class="info-img-container">
+            <div class="about-section">
+                <h2>Hi, everyone!</h2>
+                <p>I am <div class="attr-container">
+                    <div class="word w1">Nikhil Kumar</div>
+                    <div class="word w2">a software engineer</div>
+                    <div class="word w3">a gym rat</div>
+                </div></p>
+            <div class="info-buttons">
+                <button class="resume-btn">Download Resume</button>
+                <button class="tech-btn">Technologies and Skills</button>
+            </div>
+            </div>
+            <img class="designer-img" src="./assets/images/undraw_designer.svg" alt="">
+        </div>
     </section>
 
     <section id="tech" class="tech-skills-section">
@@ -42,9 +58,23 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="contact-form">
-            hello contact form here
-        </div>
+        <h1 class="contact-title">Say Hello!</h1>
+            <form
+            class="contact-form"
+            action="https://formspree.io/f/myyoqlzb"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+
 
 </div>
 
