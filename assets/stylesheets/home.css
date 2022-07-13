@@ -1,0 +1,156 @@
+.splash-container {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    padding-top: 70px;
+
+}
+
+.info-img-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15vh 15vw 0;
+    align-items: center;
+
+}
+
+.word {
+    opacity: 0;
+    position: absolute;
+    color: var(--purple);
+}
+
+.splash-section {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.w1 {
+    animation: w1anim 8s infinite;
+}
+
+.w2 {
+    animation: w2anim 8s infinite;
+}
+
+.w3 {
+    animation: w3anim 8s infinite;
+}
+
+@keyframes w1anim {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes w2anim {
+    40% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+}
+
+@keyframes w3anim {
+    70% {
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.info-buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+div.info-buttons>button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+
+    background-color: #3e3d55;
+    padding: 15px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+div.info-buttons>button:hover {
+    background-color: var(--purple);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-btn {
+    margin-right: 20px;
+}
+
+
+.info-list {
+    padding-top: 70px;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: lighter;
+}
+
+.info-links-fa {
+    margin-top: 10vh;
+}
+
+.fa-brands {
+    font-size: 30px;
+    transition: 0.2s ease-in-out;
+    margin-right: 30px;
+    display: inline-block;
+    max-width: 20px;
+    max-height: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    color: var(--purple);
+    transition: 0.3s ease-in-out;
+}
+
+.fa-angle-down {
+    font-size: 2em;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-angle-down:hover {
+    color: var(--dpurple);
+    transition: all 0.4s ease-in-out;
+    transform: translateY(30%);
+}
+
+.fa-ad-wrapper {
+    position: absolute;
+    left: 49%;
+}
+
+.fa-ad-wrapper.main {
+    bottom: 5%;
+}

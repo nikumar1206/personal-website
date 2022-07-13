@@ -1,24 +1,25 @@
-.tech-skills-section {
+.about-section {
     width: 100vw;
     height: 100vh;
 }
 
 .section-title {
     text-align: center;
-    font-size: 35px;
-    padding-top: 70px;
+    font-size: 50px;
+    padding: 3rem 0;
+
     color: var(--dpurple);
+    font-weight: bold;
 }
 
 .terminal {
-    padding-top: 50px;
     height: 500px;
     width: 800px;
     margin: 0 auto;
+    font-family: 'Fira Mono', monospace;
 }
 
 .terminal-header {
-    /* background: linear-gradient(to bottom, rgb(238, 238, 238), rgb(210, 210, 210)); */
     background: #9c9c9c;
     height: 25px;
     border-radius: 8px 8px 0 0;
@@ -57,7 +58,10 @@
 .terminal-body {
     width: inherit;
     height: inherit;
-    background-color: lightslategray;
+    background-color: #1b1b27;
+    color: var(--sblue);
+    overflow-y: auto;
+    font-size: 15px;
 }
 
 .fa-ad-wrapper.tech {

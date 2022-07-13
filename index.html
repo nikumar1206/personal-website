@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/23650d1b39.js" crossorigin="anonymous"></script>
     <script src="./assets/javascript/main.js"></script>
     <title>Nikhil Kumar's Porfolio Site</title>
@@ -15,10 +18,11 @@
     <nav id="navbar" class="navbar">
             <div class="avatar">
             <img class="avatar-img"src="./assets/images/undraw_avatar.svg" alt="">
-            <p>Nikhil</p> 
+            <p>Nikhil</p>
         </div>
         <ul class="nav-list">
-            <li><a href="#home">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#tech">Technologies and Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
@@ -31,7 +35,7 @@
 
     <section id="home" class="splash-container">
         <div class="info-img-container">
-            <div class="about-section">
+            <div class="splash-section">
                 <h2>Hi, everyone!</h2>
                 <p>I am 
                     <div class="attr-container">
@@ -48,11 +52,11 @@
                 </ul>
             </div>
             <div class="info-buttons">
-                <button class="resume-btn">Resume</button>
-                <button class="tech-btn">Contact Me</button>
+                <button onclick="window.open('https://drive.google.com/file/d/1VrjPvcKqFsb0ODJQpFHvocgrcq7W9JAZ/view?usp=sharing', '_blank')" class="resume-btn">Resume</button>
+                <button onclick="window.location.href=`#contact`" class="tech-btn">Contact Me</button>
             </div>
             <div class="info-links-fa">
-                <a href="https://github.com/nikumar1206" target="_blank"><i id="small-fa" class="fa-brands fa-angellist"></a></i>
+                <a href="https://angel.co/u/nikhil-kumar-525" target="_blank"><i id="small-fa" class="fa-brands fa-angellist"></a></i>
                 <a href="https://github.com/nikumar1206" target="_blank"><i id="small-fa" class="fa-brands fa-github"></a></i>
                 <a href="https://linkedin.com/in/nikhil-kumar7890/" target="_blank"><i id="small-fa" class="fa-brands fa-linkedin-in"></i>
             </div>
@@ -60,11 +64,11 @@
             </div>
             <img class="designer-img" src="./assets/images/undraw_designer.svg" alt="">
         </div>
-        <a href="#tech" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#about" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
-    <section id="tech" class="tech-skills-section">
-        <h1 class="tech-skills-title section-title">Technologies and Skills</h1>
+    <section id="about" class="about-section">
+        <h1 class="about-skills-title section-title">About Me</h1>
         <div class="terminal-container">
 
             <div class="terminal">
@@ -77,7 +81,7 @@
                     <div class="terminal-github"></div>
                 </div>
                 <div class="terminal-body">
-
+                    <span>~ Education:</span>
                 </div>
             </div>
         </div>
@@ -92,25 +96,19 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <h1 class="contact-title">Say Hello!</h1>
+        <h1 class="contact section-title">Contact Me!</h1>
             <form
             class="contact-form"
             action="https://formspree.io/f/myyoqlzb"
             method="POST"
           >
-            <label>
-              Your email:
-              <input type="email" name="email">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
+              <input class="contact-email contact-input" type="email" name="email" placeholder="E-Mail">
+              <textarea class="contact-message contact-input" name="message" placeholder="Type Your Message Here"></textarea>
+
+            <button class="contact-submit" type="submit">Send</button>
           </form>
+    </section>
 
-
-</div>
 
 </body>
 </html>
