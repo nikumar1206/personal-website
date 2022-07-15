@@ -58,8 +58,9 @@
 .terminal-body {
     width: inherit;
     height: inherit;
-    background-color: #1b1b27;
+
     color: var(--sblue);
+    background-color: #17202f;
     overflow-y: auto;
     font-size: 15px;
 }
