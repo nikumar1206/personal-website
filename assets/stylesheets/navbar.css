@@ -83,3 +83,40 @@ ul {
     font-size: 15px;
     line-height: 25px;
 }
+
+.nightmode-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.nightmode-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--dpurple);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nightmode-btn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nightmode-btn:hover {
+    transition: 0.4s all;
+    /* color: var(--dpurple); */
+}

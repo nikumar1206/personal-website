@@ -17,6 +17,7 @@
     width: 800px;
     margin: 0 auto;
     font-family: 'Fira Mono', monospace;
+    box-shadow: 0px 5px 15px rgba(0, 0.2, 0.2, 0.2);
 }
 
 .terminal-header {
@@ -58,13 +59,60 @@
 .terminal-body {
     width: inherit;
     height: inherit;
-
     color: var(--sblue);
     background-color: #17202f;
     overflow-y: auto;
     font-size: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
 }
 
 .fa-ad-wrapper.tech {
     margin-top: 4rem;
+}
+
+.terminal-code-block {
+    margin-bottom: 25px;
+}
+
+.terminal-code-block.first {
+    margin-top: 5px;
+}
+
+.command {
+    color: var(--wpink);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.terminal-input {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+}
+
+.terminal-input>i {
+    padding-right: 5px;
+    display: inline-block;
+    transform: translateY(10%);
+}
+
+.terminal-input>input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    min-width: 75vw;
+    line-height: 15px;
+}
+
+.terminal-input>input:focus {
+    border: none;
+    outline: none
+}
+
+.terminal-code.object {
+    white-space: pre-wrap;
+    line-height: normal;
 }

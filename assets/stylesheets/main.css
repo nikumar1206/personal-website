@@ -3,6 +3,7 @@
 @import url("navbar.css");
 @import url("home.css");
 @import url("about.css");
+@import url("tech.css");
 @import url("projects.css");
 @import url("contact.css");
 
@@ -10,6 +11,7 @@
     --purple: #6b63ff;
     --dpurple: #584ccc;
     --sblue: #9CEAF3;
+    --wpink: #ff8ffd;
 }
 
 html,
@@ -30,6 +32,7 @@ input {
 input::placeholder,
 textarea::placeholder {
     font-weight: bold;
+    padding-left: 2px;
 }
 
 

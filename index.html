@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <script src="https://kit.fontawesome.com/23650d1b39.js" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/main.js" defer></script>
     <title>Nikhil Kumar's Porfolio Site</title>
 </head>
 <body>
@@ -22,14 +24,14 @@
         </div>
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a id="nav-about" href="#about">About Me</a></li>
             <li><a href="#tech">Technologies and Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
 
         </ul>
         <div>
-            <button class="nightmode-btn">Night Mode</button>
+            <button class="nightmode-btn"><span>Night Mode</span></button>
         </div>
     </nav>
 
@@ -64,7 +66,7 @@
             </div>
             <img class="designer-img" src="./assets/images/undraw_designer.svg" alt="">
         </div>
-        <a href="#about" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#about" id="angle-down-about" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
     <section id="about" class="about-section">
@@ -81,13 +83,49 @@
                     <div class="terminal-github"></div>
                 </div>
                 <div class="terminal-body">
-                    <span>~ Education:</span>
+                    <section class="terminal-code-block first">
+                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> about</span>
+                        <p class="terminal-code">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. </p>
+                    </section>
+                    <section class="terminal-code-block second">
+                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> education</span>
+                        <p id="educationel" class="terminal-code object"></p>
+                    </section>
+                    <section class="terminal-code-block third">
+                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> interests</span>
+                        <p class="terminal-code">["coding", "video games", "hiking", "swimming", "strength training", "cooking"]</p>
+                    </section>
+                    <section class="terminal-input">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <input id="terminal-input" placeholder="insert commands here // enter help for a list of commands" type="text" name="" id="">
+                    </section>
                 </div>
             </div>
         </div>
         <a href="#projects" class="fa-ad-wrapper tech"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
+    <section id="tech" class="tech-section">
+        <h1 class="tech-skills-title section-title">Technologies and Skills</h1>
+        <div class="tech-skills-container">
+            <i class="devicon devicon-javascript-plain"></i>
+            <i class="devicon devicon-ruby-plain-wordmark"></i>
+            <i class="devicon devicon-python-plain-wordmark"></i>
+            <i class="devicon devicon-react-original-wordmark"></i>
+            <i class="devicon devicon-redux-original"></i>
+            <i class="devicon devicon-rails-plain-wordmark"></i>
+            <i class="devicon devicon-postgresql-plain-wordmark"></i>
+            <i class="devicon devicon-nodejs-plain-wordmark"></i>
+            <i class="devicon devicon-mongodb-plain-wordmark"></i>
+            <i class="devicon devicon-git-plain-wordmark"></i>
+            <i class="devicon devicon-express-original-wordmark"></i>
+            <i class="devicon devicon-nextjs-original-wordmark"></i>
+            <i class="devicon devicon-html5-plain-wordmark"></i>
+            <i class="devicon devicon-css3-plain-wordmark"></i>
+            <i class="devicon devicon-heroku-line-wordmark"></i>
+            <i class="devicon devicon-trello-plain-wordmark"></i>
+        </div>
+    </section>
     <section id="projects" class="projects-section">
         <h1 class="tech-skills-title section-title">Projects</h1>
         <div class="projects-container">sup projects container here
