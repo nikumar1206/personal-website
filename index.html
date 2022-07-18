@@ -35,7 +35,7 @@
         </div>
     </nav>
 
-    <section id="home" class="splash-container">
+    <section id="home" class="splash-container reveal">
         <div class="info-img-container">
             <div class="splash-section">
                 <h2>Hi, everyone!</h2>
@@ -69,7 +69,8 @@
         <a href="#about" id="angle-down-about" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
-    <section id="about" class="about-section">
+    <div id="about"></div>
+    <section class="about-section reveal">
         <h1 class="about-skills-title section-title">About Me</h1>
         <div class="terminal-container">
 
@@ -85,7 +86,10 @@
                 <div class="terminal-body">
                     <section class="terminal-code-block first">
                         <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> about</span>
-                        <p class="terminal-code">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. </p>
+                        <p class="terminal-code about">Hi, I am a software engineer who specializes in building full-stack web applications.
+                            My interest in coding began when I tried supplementing my biochemistry research with a simple Python algorithm and that's where I got hooked!
+                            I love finding creative solutions to problems that have not yet been answered!
+                        </p>
                     </section>
                     <section class="terminal-code-block second">
                         <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> education</span>
@@ -102,10 +106,11 @@
                 </div>
             </div>
         </div>
-        <a href="#projects" class="fa-ad-wrapper tech"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#tech" class="fa-ad-wrapper tech"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
-    <section id="tech" class="tech-section">
+    <div id="tech"></div>
+    <section class="tech-section reveal">
         <h1 class="tech-skills-title section-title">Technologies and Skills</h1>
         <div class="tech-skills-container">
             <i class="devicon devicon-javascript-plain"></i>
@@ -125,28 +130,75 @@
             <i class="devicon devicon-heroku-line-wordmark"></i>
             <i class="devicon devicon-trello-plain-wordmark"></i>
         </div>
-    </section>
-    <section id="projects" class="projects-section">
-        <h1 class="tech-skills-title section-title">Projects</h1>
-        <div class="projects-container">sup projects container here
-        </div>
-        <a href="#contact" class="fa-ad-wrapper"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#projects" id="angle-down-project" class="fa-ad-wrapper proj"><i class="fa-solid fa-angle-down"></i></a>
     </section>
 
-    <section id="contact" class="contact-section">
+    <div id="projects"></div>
+    <section class="projects-section reveal">
+        <h1 class="tech-skills-title section-title">Projects</h1>
+        <div class="projects-container">
+            <article class="project reveal">
+                <div class="project-image"><img class="proj-ss" src="./assets/images/linealert.png" alt=""></div>
+                <h1 class="proj-title">LineAlert</h1>
+                <p class="proj-description">LineAlert is a safety-focused web app that allows
+                    users to create and view alerts of ongoing issues on subway 
+                    stations across New York City.
+                </p>
+                <div class="proj-buttons">
+                    <a href="https://aa-linealert.herokuapp.com/"><button class="pjbut live">Live</button></a>
+                    <a href="https://github.com/leochung97/LineAlert"><button class="pjbut github">GitHub</button></a>
+                </div>
+            </article>
+            
+            <article class="project reveal">
+                <div class="project-image"><img class="proj-ss" src="./assets/images/streetsmart.png" alt=""></div>
+                <h1 class="proj-title">StreetSmart</h1>
+                <p class="proj-description">StreetSmart is a pixel-perfect clone of StreetEasy, 
+                    a real-estate search-engine.
+                </p>
+                <div class="proj-buttons">
+                    <a href="http://streetsmart1.herokuapp.com/"><button class="pjbut live">Live</button></a>
+                    <a href="https://github.com/nikumar1206/StreetSmart"><button class="pjbut github">GitHub</button></a>
+                </div>
+                
+            </article>
+            
+            <article class="project reveal">
+                <div class="project-image"><img class="proj-ss" src="./assets/images/way_of_the_blade.png" alt=""></div>
+                <h1 class="proj-title">Way of the Blade</h1>
+                <p class="proj-description">Inspired by Japanese animation, Way of the Blade is a fighting game
+                    playable against a friend or an AI.
+                </p>
+                <div class="proj-buttons">
+                    <a href="http://nikhil-kumar.tk/Way-of-The-Blade/"><button class="pjbut live">Live</button></a>
+                    <a href="https://github.com/nikumar1206/Way-of-The-Blade/"><button class="pjbut github">GitHub</button></a>
+                </div>
+            </article>
+        </div>
+        <a href="#contact" class="fa-ad-wrapper proj"><i class="fa-solid fa-angle-down"></i></a>
+    </section>
+
+    <div id="contact"></div>
+    <section id="contact" class="contact-section reveal">
         <h1 class="contact section-title">Contact Me!</h1>
             <form
             class="contact-form"
             action="https://formspree.io/f/myyoqlzb"
             method="POST"
           >
-              <input class="contact-email contact-input" type="email" name="email" placeholder="E-Mail">
-              <textarea class="contact-message contact-input" name="message" placeholder="Type Your Message Here"></textarea>
+                <input type="text" class="contact-input contact-name" placeholder="Name">
+                <input class="contact-email contact-input" type="email" name="email" placeholder="E-Mail">
+                <textarea class="contact-message contact-input" name="message" placeholder="Type Your Message Here"></textarea>
 
             <button class="contact-submit" type="submit">Send</button>
           </form>
     </section>
 
-
+    <footer>
+        <span class="footer-copyright">
+            Designed by Nikhil Kumar
+        </span>
+        
+    </footer>
 </body>
 </html>

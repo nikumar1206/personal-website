@@ -69,7 +69,7 @@
 }
 
 .fa-ad-wrapper.tech {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .terminal-code-block {
@@ -78,6 +78,10 @@
 
 .terminal-code-block.first {
     margin-top: 5px;
+}
+
+.terminal-code.about {
+    line-height: normal;
 }
 
 .command {

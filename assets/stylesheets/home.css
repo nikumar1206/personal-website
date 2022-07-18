@@ -22,6 +22,7 @@
 .splash-section {
     font-size: 40px;
     line-height: 50px;
+    font-weight: bold;
 }
 
 .w1 {
@@ -149,8 +150,4 @@ div.info-buttons>button:hover {
 .fa-ad-wrapper {
     position: absolute;
     left: 49%;
-}
-
-.fa-ad-wrapper.main {
-    bottom: 5%;
 }

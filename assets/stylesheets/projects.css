@@ -1,4 +1,88 @@
 .projects-section {
     width: 100vw;
     height: 100vh;
+    color: black;
+}
+
+.projects-container {
+    margin: 0 auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    color: white;
+}
+
+.project {
+    background-color: var(--dpurple);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+
+.project:hover {
+    border-color: var(--dpurple);
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.fa-ad-wrapper.proj {
+    margin-top: 5rem;
+}
+
+.project-image {
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.proj-ss {
+    width: 100%;
+}
+
+.proj-title {
+    margin: 2rem auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.proj-description {
+    padding: 20px;
+    line-height: normal;
+}
+
+.proj-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.pjbut {
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #3e3d55;
+    padding: 15px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.pjbut:hover {
+    background-color: var(--purple);
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        width: 50%;
+    }
 }
