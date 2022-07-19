@@ -1,7 +1,7 @@
 .splash-container {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 55px);
     width: 100vw;
-    padding-top: 70px;
+    margin-top: 55px;
 
 }
 
@@ -20,7 +20,7 @@
 }
 
 .splash-section {
-    font-size: 40px;
+    font-size: 3rem;
     line-height: 50px;
     font-weight: bold;
 }
@@ -119,6 +119,8 @@ div.info-buttons>button:hover {
 
 .info-links-fa {
     margin-top: 10vh;
+    display: flex;
+    gap: 1rem;
 }
 
 .fa-brands {
@@ -150,4 +152,7 @@ div.info-buttons>button:hover {
 .fa-ad-wrapper {
     position: absolute;
     left: 49%;
+    bottom: 4%;
 }
+
+@media screen and (max-width: 800px) {}

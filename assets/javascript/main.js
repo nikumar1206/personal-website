@@ -13,6 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
     prevScrollpos = currentScrollPos;
   };
 
+  // adds night mode feature
+  const checkbox = document.getElementById("checkbox");
+
+  checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("night");
+    let socials = document.getElementsByClassName("social");
+    for (let i = 0; i < socials.length; i++) {
+      let el = socials[i];
+      el.classList.toggle("night");
+    }
+  });
+
   // adds formatted json object into terminal
   let educationObj = {
     "CUNY Macaulay Honors": {

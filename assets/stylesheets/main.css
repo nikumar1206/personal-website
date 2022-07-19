@@ -40,6 +40,18 @@ a {
     color: inherit;
 }
 
+.angle-down {
+    width: 25px;
+    height: auto;
+    transition: 0.4s ease-in-out;
+}
+
+.angle-down:hover {
+    /* color: var(--dpurple); */
+    transition: all 0.4s ease-in-out;
+    transform: translateY(30%);
+}
+
 .reveal {
     position: relative;
     transform: translateY(150px);
@@ -50,4 +62,13 @@ a {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+body.night {
+    background-color: #292c35;
+    color: white;
+}
+
+img.night {
+    filter: invert(100%);
 }

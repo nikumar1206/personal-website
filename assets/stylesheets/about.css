@@ -109,6 +109,7 @@
     color: inherit;
     min-width: 75vw;
     line-height: 15px;
+    padding-left: 0.5rem;
 }
 
 .terminal-input>input:focus {
@@ -119,4 +120,15 @@
 .terminal-code.object {
     white-space: pre-wrap;
     line-height: normal;
+}
+
+.social {
+    width: 25px;
+    height: auto;
+
+}
+
+.terminal-rightarr {
+    width: 10px;
+    height: auto;
 }

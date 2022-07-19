@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <script src="https://kit.fontawesome.com/23650d1b39.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/23650d1b39.js" crossorigin="anonymous"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./assets/javascript/main.js" defer></script>
     <title>Nikhil Kumar's Porfolio Site</title>
 </head>
-<body>
+<body class="">
     <nav id="navbar" class="navbar">
             <div class="avatar">
             <img class="avatar-img"src="./assets/images/undraw_avatar.svg" alt="">
@@ -24,14 +26,19 @@
         </div>
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
-            <li><a id="nav-about" href="#about">About Me</a></li>
-            <li><a href="#tech">Technologies and Skills</a></li>
+            <li><a id="nav-about" href="#about">About</a></li>
+            <li><a href="#tech">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
-        <div>
-            <button class="nightmode-btn"><span>Night Mode</span></button>
+        <div class="nm-toggle-container">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <img class="moon-toggle" src="./assets/images/moon-solid.svg" alt="">
+              <img class="sun-toggle" src="./assets/images/sun-solid.svg" alt="">
+              <div class='ball'></div>
+            </label>
         </div>
     </nav>
 
@@ -58,15 +65,14 @@
                 <button onclick="window.location.href=`#contact`" class="tech-btn">Contact Me</button>
             </div>
             <div class="info-links-fa">
-                <a href="https://angel.co/u/nikhil-kumar-525" target="_blank"><i id="small-fa" class="fa-brands fa-angellist"></a></i>
-                <a href="https://github.com/nikumar1206" target="_blank"><i id="small-fa" class="fa-brands fa-github"></a></i>
-                <a href="https://linkedin.com/in/nikhil-kumar7890/" target="_blank"><i id="small-fa" class="fa-brands fa-linkedin-in"></i>
+                <a href="https://angel.co/u/nikhil-kumar-525" target="_blank"><img class="social angel" src="./assets/images/angellist-brands.svg" alt=""></a>
+                <a href="https://github.com/nikumar1206" target="_blank"><img class="social git" src="./assets/images/github-alt-brands.svg" alt=""></a>
+                <a href="https://linkedin.com/in/nikhil-kumar7890/" target="_blank"><img class="social in" src="./assets/images/linkedin-in-brands.svg" alt=""></a>
             </div>
-
             </div>
             <img class="designer-img" src="./assets/images/undraw_designer.svg" alt="">
         </div>
-        <a href="#about" id="angle-down-about" class="fa-ad-wrapper main"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#about" id="angle-down-about" class="fa-ad-wrapper main"><img class="angle-down" src="./assets/images/angle-down-solid.svg" alt=""></a>
     </section>
 
     <div id="about"></div>
@@ -85,28 +91,28 @@
                 </div>
                 <div class="terminal-body">
                     <section class="terminal-code-block first">
-                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> about</span>
+                        <span class="terminal-code command"><img class="terminal-rightarr" src="./assets/images/angles-right-solid.svg" alt=""> about</span>
                         <p class="terminal-code about">Hi, I am a software engineer who specializes in building full-stack web applications.
                             My interest in coding began when I tried supplementing my biochemistry research with a simple Python algorithm and that's where I got hooked!
                             I love finding creative solutions to problems that have not yet been answered!
                         </p>
                     </section>
                     <section class="terminal-code-block second">
-                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> education</span>
+                        <span class="terminal-code command"><img class="terminal-rightarr" src="./assets/images/angles-right-solid.svg" alt=""> education</span>
                         <p id="educationel" class="terminal-code object"></p>
                     </section>
                     <section class="terminal-code-block third">
-                        <span class="terminal-code command"><i class="fa-solid fa-angles-right"></i> interests</span>
+                        <span class="terminal-code command"><img class="terminal-rightarr" src="./assets/images/angles-right-solid.svg" alt=""> interests</span>
                         <p class="terminal-code">["coding", "video games", "hiking", "swimming", "strength training", "cooking"]</p>
                     </section>
                     <section class="terminal-input">
-                        <i class="fa-solid fa-angles-right"></i>
+                        <img class="terminal-rightarr" src="./assets/images/angles-right-solid.svg" alt="">
                         <input id="terminal-input" placeholder="insert commands here // enter help for a list of commands" type="text" name="" id="">
                     </section>
                 </div>
             </div>
         </div>
-        <a href="#tech" class="fa-ad-wrapper tech"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#tech" class="fa-ad-wrapper tech"><img class="angle-down" src="./assets/images/angle-down-solid.svg" alt=""></a>
     </section>
 
     <div id="tech"></div>
@@ -124,13 +130,13 @@
             <i class="devicon devicon-mongodb-plain-wordmark"></i>
             <i class="devicon devicon-git-plain-wordmark"></i>
             <i class="devicon devicon-express-original-wordmark"></i>
-            <i class="devicon devicon-nextjs-original-wordmark"></i>
+            <i class="devicon devicon-amazonwebservices-plain-wordmark"></i>
             <i class="devicon devicon-html5-plain-wordmark"></i>
             <i class="devicon devicon-css3-plain-wordmark"></i>
             <i class="devicon devicon-heroku-line-wordmark"></i>
             <i class="devicon devicon-trello-plain-wordmark"></i>
         </div>
-        <a href="#projects" id="angle-down-project" class="fa-ad-wrapper proj"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#projects" id="angle-down-project" class="fa-ad-wrapper proj"><img class="angle-down" src="./assets/images/angle-down-solid.svg" alt=""></a>
     </section>
 
     <div id="projects"></div>
@@ -175,12 +181,12 @@
                 </div>
             </article>
         </div>
-        <a href="#contact" class="fa-ad-wrapper proj"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#contact" class="fa-ad-wrapper proj"><img class="angle-down" src="./assets/images/angle-down-solid.svg" alt=""></a>
     </section>
 
     <div id="contact"></div>
-    <section id="contact" class="contact-section reveal">
-        <h1 class="contact section-title">Contact Me!</h1>
+    <section id="contact" class="contact-section">
+        <h1 class="contact section-title reveal">Contact Me!</h1>
             <form
             class="contact-form"
             action="https://formspree.io/f/myyoqlzb"
